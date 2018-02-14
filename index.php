@@ -1,3 +1,15 @@
+<?php
+//include pagina del database
+//include 'app/database.php';
+
+//questo andrebbe messo alla fine della pagina
+//mysqli_close($mysqli);
+?>
+
+
+
+
+
 <!doctype html>
 <html>
 <head>
@@ -13,12 +25,7 @@
 <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 <link href="resources/style.css" rel="stylesheet" />
 <script src="resources/main.js"></script>
-<?php
-//stabilisco la connesessione col db
-require "resources/CTDB.php";
 
-mysqli_close($CTDB);
-?>
 </head>
 <body>
 
@@ -35,24 +42,22 @@ mysqli_close($CTDB);
 
 <div class="container">
 	<div class="cards">
+
+<?php
+//test inserimento variabili
+$url = 'http://placeimg.com/400/200/animals';
+$autore = 'mario rossi';
+$descrizione_breve = 'qweqwe qwe qweqweqwe qwe qweqwe qweqweqwe qweqwewqe';
 	
-		<a class="card" onclick="opencard()">
-			<?php
-//scusa se ho modifcato un pochino ma devo capire come le variabili nella pagina...xD
-			echo	"<span class="card-header" style="background-image: url($url1);">
-				</span>
-				<span class="card-summary">
-					<span class="card-author">autore: nome cognome perona</span>
-					<i>
-						descrizione ridotta del logo qweqweqweqweqweqwe
-					</i>
-				<	br>
-				</span>
-				<span class="card-meta">
-					clicca per votare
-				</span>"
-			?>
-		</a>
+echo  '<a class="card" onclick="opencard()">'.
+			'<span class="card-header" style="background-image: url('.$url.');">'.
+				'</span><span class="card-summary">'.
+					'<span class="card-author">autore:'.$autore.'</span>'.
+					'<i>'.$descrizione_breve.'</i>'.
+				'<br></span><span class="card-meta">clicca per votare</span></a>';
+
+?>
+
 
 		<a class="card" onclick="opencard()">
 			<span class="card-header" style="background-image: url(http://placeimg.com/400/200/animals);">
