@@ -6,7 +6,7 @@ $votoImg2 = $_POST[];
 $votoImg3 = $_POST[];
 $votoImg4 = $_POST[];
 $votoImg5 = $_POST[];
-include "function/connessionedb.php";
+include "resources/CTDB.php";
 
 ?>
 </body>
