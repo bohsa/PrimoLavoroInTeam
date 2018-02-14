@@ -10,6 +10,7 @@
 <meta name="msapplication-TileColor" content="#212121" />
 <meta name="theme-color" content="#212121" />
 
+<link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 <link href="resources/style.css" rel="stylesheet" />
 <script src="resources/main.js"></script>
 <?php
@@ -21,7 +22,16 @@ mysqli_close($CTDB);
 </head>
 <body>
 
-<h1> devo ancora fare l'header lol </h1>
+<ul>
+  <li><a class="active">votazioni</a></li>
+  <li><a  href="#home">homepage</a></li>
+  <li><a href="#contact">informazioni</a></li>
+</ul>
+
+<div class="descrizione">
+<h1>descrizione del progetto</h1>
+<p>altro testo da aggiungere sul progetto e le sue regole</p>
+</div>
 
 <div class="container">
 	<div class="cards">
