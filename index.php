@@ -12,7 +12,12 @@
 
 <link href="resources/style.css" rel="stylesheet" />
 <script src="resources/main.js"></script>
+<?php
+//stabilisco la connesessione col db
+require "resources/CTDB.php";
 
+mysqli_close($CTDB);
+?>
 </head>
 <body>
 
@@ -22,18 +27,21 @@
 	<div class="cards">
 	
 		<a class="card" onclick="opencard()">
-			<span class="card-header" style="background-image: url(http://placeimg.com/400/200/animals);">
-			</span>
-			<span class="card-summary">
-				<span class="card-author">autore: nome cognome perona</span>
-				<i>
-					descrizione ridotta del logo qweqweqweqweqweqwe
-				</i>
-				<br>
-			</span>
-			<span class="card-meta">
-				clicca per votare
-			</span>
+			<?php
+//scusa se ho modifcato un pochino ma devo capire come le variabili nella pagina...xD
+			echo	"<span class="card-header" style="background-image: url($url1);">
+				</span>
+				<span class="card-summary">
+					<span class="card-author">autore: nome cognome perona</span>
+					<i>
+						descrizione ridotta del logo qweqweqweqweqweqwe
+					</i>
+				<	br>
+				</span>
+				<span class="card-meta">
+					clicca per votare
+				</span>"
+			?>
 		</a>
 
 		<a class="card" onclick="opencard()">
