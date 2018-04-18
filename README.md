@@ -7,4 +7,8 @@ cose da fare:
 -spedire i dati a una pagina php che controlla la presenza dell email o meno nel database, crea una sequenza di 6 cifre casuali e le spedisce alla mail indicata e chiede la verifica;
 se la sequenza è esatta allora i dati vengono salvati sul db
 
+<<<<<<< HEAD
 modifica 3 rob su branc 1
+=======
+modifica 2 rob
+>>>>>>> ramo-creato-per-vedere-se-ho-permesso-di-creare-rami
